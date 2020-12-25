@@ -31,8 +31,8 @@ export default class SocketService {
     if (!window.WebSocket) {
       return console.log('您的浏览器不支持WebSocket')
     }
-    // this.ws = new WebSocket('ws://test.xrtning.cn:9998')
-    this.ws = new WebSocket('ws://39.105.34.31:9998')
+    
+    this.ws = new WebSocket('ws://localhost:9998')
     // 连接成功的事件
     this.ws.onopen = () => {
       console.log('连接服务端成功了')
